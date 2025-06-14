@@ -69,7 +69,8 @@ export default function Skill() {
 
      
 {/* Bottom Placeholder */}
-<div className="mt-8 pl-2 sm:fixed -translate-x-14 w-screen">
+<div className="mt-8 w-full sm:w-[80vw] sm:fixed -translate-x-8 sm:-translate-x-17">
+
   <div className="bg-[#1e1e1e] w-screen h-[40rem] flex flex-col items-center justify-center text-white text-lg overflow-hidden">
 
     {/* Title */}
