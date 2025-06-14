@@ -18,7 +18,7 @@ export default function Skill() {
       </div>
 
       {/* Skills Grid */}
-      <div className="mt-17 translate-y-8 grid grid-cols-2 sm:grid-cols-3 pr-21 md:grid-cols-5 gap-2 justify-center">
+      <div className="mt-17 translate-y-8 grid grid-cols-1 sm:grid-cols-3 pr-21 md:grid-cols-5 gap-2 justify-center">
         <Card icon={<JavascriptIcon />} />
         <Card icon={<TypeScriptIcon />} />
         <Card icon={<ReactIcon />} />
@@ -67,54 +67,40 @@ export default function Skill() {
         <Contact />
       </div>
 
-      {/* Bottom Placeholder */}
-<div className="mt-8 -translate-x-16  sm: trnaslate-x-12 ">
-  <div className="bg-[#1e1e1e] w-screen h-[40rem] flex items-center flex-col justify-center text-white text-lg overflow-hidden">
+     
+{/* Bottom Placeholder */}
+<div className="mt-8 pl-2 sm:fixed -translate-x-14 w-screen">
+  <div className="bg-[#1e1e1e] w-screen h-[40rem] flex flex-col items-center justify-center text-white text-lg overflow-hidden">
+
+    {/* Title */}
     <div className="text-4xl">
-   <strong>Priyanshu</strong>
-</div>
-
-<div className="pt-20 ">
-<div className="flex flex-row gap-30">
-  <div className="group flex flex-col items-center">
-    <a href="/" className="text-white font-medium">Home</a>
-    <span className="mt-1 h-0.5 w-0 group-hover:w-12 bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_6px_#01a03d]" />
-  </div>
-  
-  <div className="group flex flex-col items-center">
-    <a href="/" className="text-white font-medium">About</a>
-    <span className="mt-1 h-0.5 w-0 group-hover:w-12 bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_6px_#01a03d]" />
-  </div>
-  
-  <div className="group flex flex-col items-center">
-    <a href="/" className="text-white font-medium">Contact</a>
-    <span className="mt-1 h-0.5 w-0 group-hover:w-12 bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_6px_#01a03d]" />
-  </div>
-  
-  <div className="group flex flex-col items-center">
-    <a href="/" className="text-white font-medium">Service</a>
-    <span className="mt-1 h-0.5 w-0 group-hover:w-12 bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_6px_#01a03d]" />
-  </div>
-  
-  <div className="group flex flex-col items-center">
-    <a href="/" className="text-white font-medium">Projects</a>
-    <span className="mt-1 h-0.5 w-0 group-hover:w-12 bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_6px_#01a03d]" />
-  </div>
-</div>
-
-
-
-</div>
-  <div className="bg-[#111111] w-screen flex justify-center translate-y-58 p-2">
-
-      <p> © 2025 <strong className="text-[#009f3e]">Priyanshu</strong>. All content and rights reserved.</p>   
-   
-  </div>
-  </div>
-</div>
-
-
+      <strong>Priyanshu</strong>
     </div>
+
+    {/* Navigation Links */}
+    <div className="pt-20">
+      <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 items-center">
+        {["Home", "About", "Contact", "Service", "Projects"].map((label, index) => (
+          <div key={index} className="group flex flex-col items-center">
+            <a href="/" className="text-white font-medium">{label}</a>
+            <span className="mt-1 h-0.5 w-0 group-hover:w-12 bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_6px_#01a03d]" />
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* Footer Note */}
+  <div className="bg-[#111111] w-screen flex justify-center mt-10 p-2">
+  <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 text-white text-sm sm:text-base">
+    <p>© 2025</p>
+    <strong className="text-[#009f3e]">Priyanshu</strong>
+    <p>All content and rights reserved.</p>
+  </div>
+</div>
+
+  </div>
+</div>
+</div>
     </FadeInOnScroll>
   );
 }
