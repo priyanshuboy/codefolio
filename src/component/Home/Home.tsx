@@ -2,7 +2,7 @@ import Downloadicon from "../../icons/downloadicon/DocumentIcon";
 
 export default function Home() {
   return (
-    <div className="px-4 md:px-20">
+    <div  id="#home" className="px-4 md:px-20">
       {/* Greeting Section */}
       <div className="pt-10 md:pt-20 md:m-12 text-center md:text-left">
         <p>
@@ -35,8 +35,9 @@ export default function Home() {
       {/* Buttons */}
       <div className="pt-8 flex flex-col md:flex-row gap-4 md:gap-10 items-center md:items-start justify-center md:justify-start">
         <a
-          href="/Priyanshu_CV.pdf"
-          download
+          href="/Priyanshu_CV (2).pdf"
+          download="Priyanshu_CV.pdf"
+          type="application/pdf"
           className="bg-[#01a03d] px-4 py-2 rounded-sm text-white flex items-center gap-2 hover:scale-105 transition duration-300"
         >
           <div className="pt-1">
@@ -45,14 +46,12 @@ export default function Home() {
           Download CV
         </a>
 
-        <button
-          onClick={() =>
-            window.open("https://github.com/priyanshuboy?tab=repositories", "_blank")
-          }
+        <a
+          href="#projects"
           className="text-white border border-white px-6 py-2 rounded-sm hover:scale-105 transition duration-300"
         >
           More
-        </button>
+        </a>
       </div>
     </div>
   );

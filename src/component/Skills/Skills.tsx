@@ -18,7 +18,7 @@ export default function Skill() {
       </div>
 
       {/* Skills Grid */}
-      <div className="mt-17 translate-y-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 justify-center">
+      <div className="mt-17 translate-y-8 grid grid-cols-2 sm:grid-cols-3 pr-12 md:grid-cols-5 gap-2 justify-center">
         <Card icon={<JavascriptIcon />} />
         <Card icon={<TypeScriptIcon />} />
         <Card icon={<ReactIcon />} />
@@ -27,14 +27,14 @@ export default function Skill() {
       </div>
 
       {/* Projects Section */}
-      <div className="-translate-y-16 flex flex-col justify-center items-center mt-92 text-center">
+      <div id="projects" className="-translate-y-16 flex flex-col justify-center items-center mt-92 text-center">
         <h1 className="text-3xl text-white font-bold">Featured Project</h1>
         <p className="text-[#959595] mt-4 max-w-3xl">
           Here are some of the projects I’ve built, showcasing my skills in full-stack development, problem-solving, and clean UI design. Each project reflects real-world challenges and modern web technologies.
         </p>
 
         {/* Project Cards */}
-    <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full px-4 md:px-0">
+    <div  className=" grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 w-full px-4 md:px-0">
 
   <ProjectCard 
     title="StreamSphere" 

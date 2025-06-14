@@ -12,14 +12,26 @@ export default function Header() {
 
           {/* Nav Links */}
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-12 pt-2">
-            {["Home", "About", "Contact"].map((item, idx) => (
-              <div key={idx} className="group relative flex flex-col items-center">
-                <a className="font-medium text-lg" href="/">
-                  {item}
-                </a>
-                <span className="mt-1 h-0.5 w-0 group-hover:w-full bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_8px_#01a03d]" />
-              </div>
-            ))}
+            <div className="group relative flex flex-col items-center">
+              <a className="font-medium text-lg" href="#home">
+                Home
+              </a>
+              <span className="mt-1 h-0.5 w-0 group-hover:w-full bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_8px_#01a03d]" />
+            </div>
+
+            <div className="group relative flex flex-col items-center">
+              <a className="font-medium text-lg" href="#projects">
+                About
+              </a>
+              <span className="mt-1 h-0.5 w-0 group-hover:w-full bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_8px_#01a03d]" />
+            </div>
+
+            <div className="group relative flex flex-col items-center">
+              <a className="font-medium text-lg" href="#contact">
+                Contact
+              </a>
+              <span className="mt-1 h-0.5 w-0 group-hover:w-full bg-[#01a03d] rounded-full transition-all duration-300 shadow-[0_0_8px_#01a03d]" />
+            </div>
           </div>
         </div>
       </div>

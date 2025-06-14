@@ -21,7 +21,7 @@ export default function ProjectCard({ title, link, imageUrl, objective }: Projec
     <FadeInOnScroll animation="fade-up" delay={100}>
       <div
         onClick={handleClick}
-        className="bg-gray-900 rounded-2xl shadow-md hover:shadow-2xl transition-transform hover:scale-105 cursor-pointer w-full group"
+     id="about"   className="bg-gray-900 rounded-2xl shadow-md hover:shadow-2xl transition-transform hover:scale-105 cursor-pointer w-full group"
       >
         {/* Optional Project Image */}
         {imageUrl && (
