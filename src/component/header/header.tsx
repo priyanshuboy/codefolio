@@ -8,7 +8,7 @@ export default function Header() {
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 text-[#e0e0e0] px-4">
           {/* Name */}
-          <div className="text-3xl font-bold text-white pr-32">Priyanshu</div>
+          <div className="text-3xl font-bold text-white pr-32  sm: translate-x-18">Priyanshu</div>
 
           {/* Nav Links */}
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-12 pt-2">

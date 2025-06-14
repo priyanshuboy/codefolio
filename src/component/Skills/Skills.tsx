@@ -18,7 +18,7 @@ export default function Skill() {
       </div>
 
       {/* Skills Grid */}
-      <div className="mt-17 translate-y-8 grid grid-cols-2 sm:grid-cols-3 pr-12 md:grid-cols-5 gap-2 justify-center">
+      <div className="mt-17 translate-y-8 grid grid-cols-2 sm:grid-cols-3 pr-21 md:grid-cols-5 gap-2 justify-center">
         <Card icon={<JavascriptIcon />} />
         <Card icon={<TypeScriptIcon />} />
         <Card icon={<ReactIcon />} />
@@ -68,7 +68,7 @@ export default function Skill() {
       </div>
 
       {/* Bottom Placeholder */}
-<div className="mt-8 -translate-x-16  ">
+<div className="mt-8 -translate-x-16  sm: trnaslate-x-12 ">
   <div className="bg-[#1e1e1e] w-screen h-[40rem] flex items-center flex-col justify-center text-white text-lg overflow-hidden">
     <div className="text-4xl">
    <strong>Priyanshu</strong>
