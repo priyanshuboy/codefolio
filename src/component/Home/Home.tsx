@@ -35,7 +35,7 @@ export default function Home() {
       {/* Buttons */}
       <div className="pt-8 flex flex-col md:flex-row gap-4 md:gap-10 items-center md:items-start justify-center md:justify-start">
         <a
-          href="/Priyanshu_CV (2).pdf"
+          href="/Priyanshu kushwah Resume 2025.pdf"
           download="Priyanshu_CV.pdf"
           type="application/pdf"
           className="bg-[#01a03d] px-4 py-2 rounded-sm text-white flex items-center gap-2 hover:scale-105 transition duration-300"
@@ -50,7 +50,7 @@ export default function Home() {
           href="#projects"
           className="text-white border border-white px-6 py-2 rounded-sm hover:scale-105 transition duration-300"
         >
-          More
+       Explore More
         </a>
       </div>
     </div>

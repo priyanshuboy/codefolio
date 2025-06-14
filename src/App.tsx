@@ -12,8 +12,8 @@ import 'aos/dist/aos.css';
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // duration of animations in ms
-      once: false     // animate every time on scroll
+      duration: 700, // duration of animations in ms
+      once: true     // animate every time on scroll
     });
   }, []);
 

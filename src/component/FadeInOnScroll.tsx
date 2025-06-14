@@ -12,7 +12,7 @@ export default function FadeInOnScroll({
   children,
   animation = "fade-up",
   delay = 0,
-  duration = 1200,
+  duration = 1000,
 }: FadeInOnScrollProps) {
   return (
     <div
