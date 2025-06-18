@@ -58,6 +58,11 @@ export default function Skill() {
     title="Excalidraw" 
     objective="🚧 Under construction — this tool will enable collaborative whiteboarding and sketching for planning and brainstorming sessions." 
   />
+    <ProjectCard 
+    title="Frontend_project" 
+    link="https://frontend-project-rust-delta.vercel.app/"
+    objective="A stylish Coca-Cola frontend built with HTML and CSS, featuring bold branding, responsive layout, smooth transitions, and modern, clean design." 
+  />
 </div>
 
       </div>
